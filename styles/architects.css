@@ -4,6 +4,7 @@
     background-color: rgba(255, 144, 14, 0.1);
     margin-bottom: 50px;
 }
+
 .navbar {
     display: flex;
     align-items: baseline;
@@ -11,32 +12,39 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .nav-links {
     display: flex;
 }
+
 .nav-item {
     list-style: none;
     margin-right: 30px;
 }
+
 ul > li > a {
     text-decoration: none;
     font-family: "work-sans", sans-serif;
     font-weight: 500;
     color: #424242;
 }
+
 .brand {
     font-family: "work-sans", sans-serif;
     font-weight: bold;
     font-size: 2rem;
 }
+
 /* banner-style */
 .banner {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .banner img {
     width: 100%;
 }
+
 .banner-content {
     font-family: "work-sans", sans-serif;
     max-width: 850px;
@@ -44,15 +52,18 @@ ul > li > a {
     text-align: center;
     margin-bottom: 40px;
 }
+
 .banner-title {
     font-weight: bold;
     font-size: 3.6rem;
 }
+
 .banner-description {
     color: rgba(114, 114, 114, 1);
     font-size: 1rem;
     margin-bottom: 30px;
 }
+
 .banner-btn,
 .features-btn {
     color: #ffffff;
@@ -64,60 +75,73 @@ ul > li > a {
     font-size: 1rem;
     /* margin-bottom: 30px; */
 }
+
 .banner-image {
     padding-bottom: 20px;
 }
+
 /* team and features style */
 main {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .team-image {
     width: 250px;
     height: 250px;
 }
+
 .team {
     display: flex;
     align-items: center;
     margin-bottom: 60px;
 }
+
 .team-image-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 14px;
 }
+
 .our-features {
     font-family: "work-sans", sans-serif;
     margin-left: 50px;
     max-width: 510px;
 }
+
 .quick-list {
     color: #727272;
     font-weight: 500;
 }
+
 .features-title {
     max-width: 420px;
     font-size: 2.3rem;
     margin-bottom: 25px;
 }
+
 .of-our {
     font-weight: bold;
 }
+
 .features {
     color: #ff900e;
     font-weight: bold;
 }
+
 .features-description {
     color: #727272;
     max-width: 470px;
     font-size: 0.9rem;
     margin-bottom: 25px;
 }
+
 /* some-facts-style */
 .some-facts {
     font-family: "work-sans", sans-serif;
     margin-bottom: 70px;
 }
+
 .facts-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -125,17 +149,20 @@ main {
     /* display: flex; */
     /* justify-content: space-between; */
 }
+
 .facts-title {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 18px;
 }
+
 .facts-description {
     color: #727272;
     max-width: 400px;
     font-size: 0.8rem;
     margin-bottom: 50px;
 }
+
 .fact-card {
     border: 1px solid #ff900e;
     width: 180px;
@@ -146,6 +173,7 @@ main {
     align-items: center;
     text-align: center;
 }
+
 .fact-number {
     color: #424242;
     font-size: 1.5rem;
@@ -153,10 +181,37 @@ main {
     margin-bottom: 10px;
     font-weight: 600;
 }
+
 .fact-name {
     color: #727272;
     margin-top: 0px;
 }
+
+/* our-sponsors-relative-style */
+
+.our-sponsor {
+    margin-bottom: 50px;
+}
+
+.sponsor-container {
+    font-family: "work-sans", sans-serif;
+    max-width: 410px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.sponsor-title {
+    color: #131313;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.sponsor-description {
+    color: #727272;
+    font-size: 0.8rem;
+}
+
 /* responsive-design-for-small-device */
 @media screen and (max-width: 576px) {
     .navbar,
@@ -165,15 +220,25 @@ main {
         flex-direction: column;
         margin: 0 auto;
     }
+
     .brand {
         margin: auto;
         margin-bottom: 30px;
         margin-top: 10px;
     }
-    .team-image-container {
+
+    .team-image-container,
+    .facts-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .facts-container {
+        justify-items: center;
+        margin: 0 auto;
+        gap: 15px;
+    }
 }
+
 /* responsive-design-for-medium-device */
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .team {
