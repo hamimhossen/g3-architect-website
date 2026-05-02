@@ -94,7 +94,7 @@ main {
 .team {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .team-image-container {
@@ -134,6 +134,80 @@ main {
     max-width: 470px;
     font-size: 0.9rem;
     margin-bottom: 25px;
+}
+
+/* my-features-related-style */
+.my-features {
+    margin-bottom: 100px;
+}
+
+.my-features-container {
+    font-family: "work-sans", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    gap: 125px;
+}
+
+.my-features-title {
+    border-left: 5px solid #ff900e;
+    padding-left: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.my-features-description {
+    font-size: 0.8rem;
+    color: #727272;
+    font-weight: 400;
+    max-width: 500px;
+    margin-bottom: 22px;
+}
+
+.my-features-card {
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    max-width: 580px;
+}
+
+.my-features-card-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: 10px;
+}
+
+.my-features-card-description {
+    color: #727272;
+    font-size: 0.8rem;
+}
+
+.my-features-image {
+    max-width: 580px;
+}
+
+.my-features-btn {
+    color: #ffffff;
+    background-color: #ff900e;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 25px 20px;
+    margin-left: -80px;
+    margin-top: -50px;
+}
+
+.btn-year {
+    font-size: 2.7rem;
+}
+
+.btn-experience {
+    font-weight: 500;
+}
+
+.my-features-architects img {
+    width: 100%;
 }
 
 /* some-facts-style */
@@ -222,11 +296,29 @@ main {
     filter: grayscale(100%);
 }
 
+/* footer-style */
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff4e7;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+.footer-title {
+    font-family: "work-sans", sans-serif;
+    text-align: center;
+    color: #424242;
+    font-size: 0.9rem;
+    padding: 20px;
+}
+
 /* responsive-design-for-small-device */
 @media screen and (max-width: 576px) {
     .navbar,
     .nav-links,
-    .team {
+    .team,
+    .my-features-container {
         flex-direction: column;
         margin: 0 auto;
     }
@@ -253,11 +345,16 @@ main {
         justify-items: center;
         gap: 35px;
     }
+    .my-features-btn {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 /* responsive-design-for-medium-device */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .team {
+    .team,
+    .my-features-container {
         flex-direction: column;
     }
     .facts-container,
@@ -268,5 +365,10 @@ main {
     }
     .facts-container {
         margin: 0px auto;
+    }
+
+    .my-features-btn {
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
